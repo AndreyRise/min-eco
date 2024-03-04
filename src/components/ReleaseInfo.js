@@ -63,7 +63,7 @@ function ReleaseInfo(props) {
                     </div>
                   </Dialog.Title>
                   <div className="flex w-full justify-center border-t border-gray-400 pt-2 ">
-                    <img src={`http://localhost:5000/uploads/image/?${userStore.user.id}?${props.popUpData.coverUri}`} className='min-w-full rounded-xl'></img>
+                    <img src={`https://min.eco/uploads/image/?${userStore.user.id}?${props.popUpData.coverUri}`} className='min-w-full rounded-xl'></img>
                   </div>
                   {props.popUpData.messageFromAdmin?<>
                     <div className='flex flex-col rounded-2xl p-4 min-w-[216px] bg-white shadow-md gap-2'>
@@ -92,7 +92,7 @@ function ReleaseInfo(props) {
                     userStore.songs.map((item)=>{
                       return <div key={item.id} className='flex flex-col rounded-2xl p-4 min-w-[216px] bg-white shadow-md gap-2'>
                         <span className='font-light'>{item.name} - {item.nickname}</span>
-                        <audio src={`http://localhost:5000/uploads/song/?${userStore.user.id}?${item.fileUri}`} className='w-full' controls/>
+                        <audio src={`https://min.eco/uploads/song/?${userStore.user.id}?${item.fileUri}`} className='w-full' controls/>
                       </div>
                     }):
                     <></>}

@@ -55,7 +55,7 @@ const navigate = useNavigate();
             Сколько процентов вы забираете?
           </Disclosure.Button>
           <Disclosure.Panel className="text-gray-500 p-3">
-          15% мы забираем себе, 85% достаётся вам
+          20% мы забираем себе, 80% достаётся вам
           </Disclosure.Panel>
         </Disclosure>
       </div>
